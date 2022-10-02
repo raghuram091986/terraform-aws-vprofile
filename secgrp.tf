@@ -6,13 +6,13 @@ resource "aws_security_group" "vprofile-bean-elb-sg" {
     from_port = 0
     protocol  = "-1"
     to_port   = 0
-    cidr_blocks = [0.0.0.0/0]
+    cidr_blocks = ["0.0.0.0/0"]
   }
   ingress {
     from_port = 80
     protocol  = "tcp"
     to_port   = 0
-    cidr_blocks = [0.0.0.0/0]
+    cidr_blocks = ["0.0.0.0/0"]
   }
 }
 
@@ -24,7 +24,7 @@ resource "aws_security_group" "vprofile-bastion-elb-sg" {
     from_port = 0
     protocol  = "-1"
     to_port   = 0
-    cidr_blocks = [0.0.0.0/0]
+    cidr_blocks = ["0.0.0.0/0"]
   }
   ingress {
     from_port = 22
@@ -42,7 +42,7 @@ resource "aws_security_group" "vprofile-prod-sg" {
     from_port = 0
     protocol  = "-1"
     to_port   = 0
-    cidr_blocks = [0.0.0.0/0]
+    cidr_blocks = ["0.0.0.0/0"]
   }
   ingress {
     from_port = 22
@@ -60,7 +60,7 @@ resource "aws_security_group" "vprofile-backend-sg" {
     from_port = 0
     protocol  = "-1"
     to_port   = 0
-    cidr_blocks = [0.0.0.0/0]
+    cidr_blocks = ["0.0.0.0/0"]
   }
   ingress {
     from_port = 0
